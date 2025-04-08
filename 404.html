@@ -4,7 +4,7 @@
 
 <!-- 
 THEME: Lodi Storage
-VERSION: 1.0.0
+VERSION: 1.1.0
 AUTHOR: Evan Crawley
 
 WEBSITE: https://www.myloditorage.com
@@ -13,7 +13,17 @@ FACEBOOK: https://www.facebook.com/mylodistorage
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FZKHS0LXN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1FZKHS0LXN');
+  </script>
 
   <!-- Basic Page Needs
 ================================================== -->
@@ -23,17 +33,36 @@ FACEBOOK: https://www.facebook.com/mylodistorage
   <!-- Mobile Specific Metas
 ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Construction Html5 Template">
+  <meta name="description"
+    content="Secure, affordable storage units in Lodi, Ohio since 1998. 24/7 access and flexible rental terms. Find the perfect storage solution for your needs.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name=author content="Evan Crawley">
+  <meta name=author content="Lodi Storage">
   <meta name=generator content="Lodi Storage">
-  
+
+  <!-- Open Graph Meta
+================================================== -->
+  <meta property="og:title" content="Lodi Storage - Secure Self-Storage Units in Lodi, OH">
+  <meta property="og:description"
+    content="Secure, affordable storage units in Lodi, Ohio since 1998. 24/7 access and flexible rental terms. Find the perfect storage solution for your needs.">
+  <meta property="og:url" content="https://www.mylodistorage.com">
+  <meta property="og:image" content="https://www.mylodistorage.com/images/logo.png">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lodi Storage - Secure Self-Storage Units in Lodi, CA">
+  <meta name="twitter:description"
+    content="Secure, affordable self-storage units in Lodi since 1998. Climate-controlled options and 24/7 access.">
+  <meta name="twitter:image" content="https://www.mylodistorage.com/images/og-image.jpg">
+
+  <link rel="canonical" href="https://www.mylodistorage.com">
+
   <!-- theme meta -->
   <meta name="theme-name" content="Lodi Storage" />
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 
   <!-- CSS
 ================================================== -->
@@ -51,21 +80,36 @@ FACEBOOK: https://www.facebook.com/mylodistorage
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
 
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZLTB5T650"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SelfStorage",
+      "name": "Lodi Storage",
+      "image": "https://www.mylodistorage.com/images/logo.png",
+      "url": "https://www.mylodistorage.com",
+      "telephone": "+1-209-XXX-XXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "118 Highland Dr",
+        "addressLocality": "Lodi",
+        "addressRegion": "OH",
+        "postalCode": "44254",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "16:00"
+      }
+    }
+    </script>
 
-  gtag('config', 'G-EZLTB5T650');
-</script>
+</head>
+
+
 <body>
   <div class="body-inner">
-
-
-
 <!-- Header start -->
 <header id="header" class="header-one">
  
