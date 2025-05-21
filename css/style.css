@@ -1249,47 +1249,71 @@ ul.navbar-nav > li > a {
 }
 
 /* Mobile header buttons */
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-buttons .header-call-us {
+  flex: 1;
+}
+.header-buttons .header-call-us:not(:last-child) {
+  margin-right: 6px;
+}
 .header-buttons .header-call-us .btn-primary {
-  min-width: 100px;
-  padding: 8px 10px !important;
+  width: 100%;
+  padding: 8px 5px !important;
   height: 36px;
   margin-bottom: 0;
+  text-align: center;
+  font-size: 12px;
 }
 @media (max-width: 380px) {
   .header-buttons .header-call-us .btn-primary {
-    min-width: 90px;
-    padding: 8px 6px !important;
+    padding: 8px 3px !important;
     font-size: 11px;
   }
 }
 @media (max-width: 340px) {
   .header-buttons .header-call-us .btn-primary {
-    min-width: 80px;
-    padding: 8px 4px !important;
+    padding: 8px 2px !important;
     font-size: 10px;
   }
 }
 .header-buttons .btn-sm {
-  padding: 4px 10px !important;
+  width: 100%;
+  padding: 4px 5px !important;
   font-size: 12px;
   white-space: nowrap;
 }
 @media (max-width: 380px) {
   .header-buttons .btn-sm {
-    font-size: 10px;
-    padding: 4px 6px !important;
+    font-size: 11px;
+    padding: 4px 3px !important;
   }
 }
 @media (max-width: 340px) {
   .header-buttons .btn-sm {
-    font-size: 9px;
-    padding: 4px 4px !important;
+    font-size: 10px;
+    padding: 4px 2px !important;
   }
 }
 
 .header-call-us .btn-primary i {
   font-size: 14px;
-  margin-right: 8px;
+  margin-right: 4px;
+}
+@media (max-width: 380px) {
+  .header-call-us .btn-primary i {
+    margin-right: 3px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 340px) {
+  .header-call-us .btn-primary i {
+    margin-right: 2px;
+    font-size: 11px;
+  }
 }
 
 .header-call-us .btn-primary:hover {
