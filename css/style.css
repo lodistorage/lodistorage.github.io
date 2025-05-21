@@ -1258,7 +1258,7 @@ ul.navbar-nav > li > a {
   flex: 1;
 }
 .header-buttons .header-call-us:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 10px;
 }
 .header-buttons .header-call-us .btn-primary {
   width: 100%;
