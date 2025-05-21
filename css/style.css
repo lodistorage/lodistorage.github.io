@@ -704,9 +704,27 @@ ul.top-info li p.info-text {
 @media (max-width: 991px) {
   .navbar-collapse.collapse {
     overflow-y: auto;
+    margin-top: 15px;
   }
 }
 
+/* Mobile header layout */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .header-buttons {
+    display: flex;
+    align-items: center;
+  }
+}
 .header-one ul.navbar-nav > li {
   padding-left: 0;
   padding-right: 30px;
@@ -755,10 +773,26 @@ ul.navbar-nav > li.active > a {
 }
 
 /*-- Logo --*/
+.logo {
+  margin-right: 20px;
+}
+
 .logo img {
   width: auto;
   height: 100px;
   padding: 10px;
+}
+@media (max-width: 991px) {
+  .logo img {
+    height: 75px;
+    padding: 5px;
+  }
+}
+@media (max-width: 575px) {
+  .logo img {
+    height: 65px;
+    padding: 5px 0;
+  }
 }
 
 .header-two .logo img {
@@ -879,12 +913,6 @@ ul.top-info-box > li.nav-search i {
 }
 
 /* Main navigation */
-.navbar-toggler {
-  float: left;
-  margin-top: 10px;
-  padding: 12px;
-}
-
 .navbar {
   border-radius: 0;
   border: 0;
@@ -892,11 +920,13 @@ ul.top-info-box > li.nav-search i {
 }
 
 .navbar-toggler {
-  margin: 10px 0;
   padding: 6px;
   border-radius: 0;
   font-size: 1rem;
   background: #d81e04;
+  height: 36px;
+  width: 36px;
+  margin: 0;
 }
 .navbar-toggler:focus {
   outline: 0;
@@ -1218,8 +1248,21 @@ ul.navbar-nav > li > a {
   box-sizing: border-box;
 }
 
+/* Mobile header buttons */
+.header-buttons .header-call-us .btn-primary {
+  min-width: 100px;
+  padding: 8px 10px !important;
+  height: 36px;
+  margin-bottom: 0;
+}
+.header-buttons .btn-sm {
+  padding: 4px 10px !important;
+  font-size: 12px;
+}
+
 .header-call-us .btn-primary i {
   font-size: 14px;
+  margin-right: 8px;
 }
 
 .header-call-us .btn-primary:hover {
@@ -1305,7 +1348,8 @@ ul.navbar-nav > li.header-call:hover > a:after {
   }
 }
 
-.slide-sub-title {
+.slide-sub-title,
+h1.slide-sub-title {
   font-style: normal;
   font-size: 60px;
   line-height: 58px;
@@ -1316,12 +1360,14 @@ ul.navbar-nav > li.header-call:hover > a:after {
   letter-spacing: -1px;
 }
 @media (max-width: 991px) {
-  .slide-sub-title {
+  .slide-sub-title,
+  h1.slide-sub-title {
     font-size: 46px;
   }
 }
 @media (max-width: 575px) {
-  .slide-sub-title {
+  .slide-sub-title,
+  h1.slide-sub-title {
     font-size: 30px;
     line-height: 30px;
   }
